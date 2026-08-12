@@ -33,29 +33,15 @@ let package = Package(
         )
     ],
     targets: [
-        .target(
+        .binaryTarget(
             name: "CocoaLumberjack",
-            dependencies: ["CocoaLumberjack_PrecompiledArchive"],
-            path: "Sources/CocoaLumberjack",
-            sources: ["Empty.m"],
-            publicHeadersPath: "include"
+            url: "https://github.com/swift-precompiled/CocoaLumberjack/releases/download/3.9.0/CocoaLumberjack-15726dea84ff54bd84511e2c184794fcd2256495c7346fa5d4af8cc1fd93a57b.xcframework.zip",
+            checksum: "15726dea84ff54bd84511e2c184794fcd2256495c7346fa5d4af8cc1fd93a57b"
         ),
         .binaryTarget(
-            name: "CocoaLumberjack_PrecompiledArchive",
-            url: "https://github.com/swift-precompiled/CocoaLumberjack/releases/download/3.9.0/CocoaLumberjack-23326ec5f3842d9ceb53e108fb1359ced835cbea9eedc814e1611ec1c545cfc6.xcframework.zip",
-            checksum: "23326ec5f3842d9ceb53e108fb1359ced835cbea9eedc814e1611ec1c545cfc6"
-        ),
-        .target(
             name: "CocoaLumberjackSwiftSupport",
-            dependencies: ["CocoaLumberjackSwiftSupport_PrecompiledArchive", "CocoaLumberjack"],
-            path: "Sources/CocoaLumberjackSwiftSupport",
-            sources: ["Empty.c"],
-            publicHeadersPath: "include"
-        ),
-        .binaryTarget(
-            name: "CocoaLumberjackSwiftSupport_PrecompiledArchive",
-            url: "https://github.com/swift-precompiled/CocoaLumberjack/releases/download/3.9.0/CocoaLumberjackSwiftSupport-d5f2dee3c699c62552443d8bf069a9ae86d53c8a9fefa1b9d15934b3649c0640.xcframework.zip",
-            checksum: "d5f2dee3c699c62552443d8bf069a9ae86d53c8a9fefa1b9d15934b3649c0640"
+            url: "https://github.com/swift-precompiled/CocoaLumberjack/releases/download/3.9.0/CocoaLumberjackSwiftSupport-ce3b74e76814c0ee44f1f8f4c50d079c08ffbd5938ba67bd626afed6f9f8b30f.xcframework.zip",
+            checksum: "ce3b74e76814c0ee44f1f8f4c50d079c08ffbd5938ba67bd626afed6f9f8b30f"
         ),
         .target(
             name: "CocoaLumberjackSwift_Aggregation",
@@ -64,8 +50,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "CocoaLumberjackSwift",
-            url: "https://github.com/swift-precompiled/CocoaLumberjack/releases/download/3.9.0/CocoaLumberjackSwift-de9f7d37f9ba3f0d4ce17168872e5bdfc641e29f93f5d098e3adc75ab1c6b628.xcframework.zip",
-            checksum: "de9f7d37f9ba3f0d4ce17168872e5bdfc641e29f93f5d098e3adc75ab1c6b628"
+            url: "https://github.com/swift-precompiled/CocoaLumberjack/releases/download/3.9.0/CocoaLumberjackSwift-6e65a68fc977c034d979e7677aa5e61708aca6433a223fa093ad11a338fd5408.xcframework.zip",
+            checksum: "6e65a68fc977c034d979e7677aa5e61708aca6433a223fa093ad11a338fd5408"
         ),
         .target(
             name: "CocoaLumberjackSwiftLogBackend_Aggregation",
@@ -74,8 +60,8 @@ let package = Package(
         ),
         .binaryTarget(
             name: "CocoaLumberjackSwiftLogBackend",
-            url: "https://github.com/swift-precompiled/CocoaLumberjack/releases/download/3.9.0/CocoaLumberjackSwiftLogBackend-667bde12fe1ec50ffa9404b1f487749247fce7c9509e3c8d636b91b1f7eab29b.xcframework.zip",
-            checksum: "667bde12fe1ec50ffa9404b1f487749247fce7c9509e3c8d636b91b1f7eab29b"
+            url: "https://github.com/swift-precompiled/CocoaLumberjack/releases/download/3.9.0/CocoaLumberjackSwiftLogBackend-a1c660165c4f0e8cc3cf2b85d1f289bf34232b65b56fb607301558681ac7c43d.xcframework.zip",
+            checksum: "a1c660165c4f0e8cc3cf2b85d1f289bf34232b65b56fb607301558681ac7c43d"
         ),
         .target(
             name: "CocoaLumberjack_PrecompiledProduct",
